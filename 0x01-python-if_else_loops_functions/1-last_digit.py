@@ -6,7 +6,8 @@ number = random.randint(-10000, 10000)  # Generate a random number between -1000
 
 # Get the last digit (positive value)
 last_digit = abs(number % 10)
-
+if number < 0:
+	digit = -digit
 print(f"Last digit of {number} is {last_digit}", end="")
 
 if last_digit > 5:
