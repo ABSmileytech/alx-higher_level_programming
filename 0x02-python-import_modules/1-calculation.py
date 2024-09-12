@@ -1,16 +1,13 @@
-# 1-calculation.py
+#!/usr/bin/python3
 
-from calculator_1 import add, sub, mul, div  # Import multiple functions
+if __name__ == "__main__":
+    """Print the sum, difference, multiple and quotient of 10 and 5."""
+    from calculator_1 import add, sub, mul, div
 
-a = 10
-b = 5
+    a = 10
+    b = 5
 
-result_add = add(a, b)
-result_sub = sub(a, b)
-result_mul = mul(a, b)
-result_div = div(a, b)
-
-print("{} + {} = {}".format(a, b, result_add))  # Print 1
-print("{} - {} = {}".format(a, b, result_sub))  # Print 2
-print("{} * {} = {}".format(a, b, result_mul))  # Print 3
-print("{} / {} = {}".format(a, b, result_div))  # Print 4
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".format(a, b, div(a, b)))
